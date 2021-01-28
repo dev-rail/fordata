@@ -1,0 +1,151 @@
+$altBlue: #1d165c;
+$mobileBodyFontSize: 1.6rem;
+$reducedBlackColor: #666;
+$primaryRed: #e76346;
+$primaryBlue: #6129ac;
+
+.contentWrapper {
+  overflow: hidden;
+  position: relative;
+  .item {
+    .desc {
+      padding-bottom: 4rem;
+      min-height: 20rem;
+      p {
+        font-size: 1.6rem;
+        color: #666;
+        font-weight: 300;
+      }
+      h2 {
+        font-size: 3.6rem;
+        line-height: 4.6rem;
+        color: $altBlue;
+        font-weight: 900;
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      color: #666;
+    }
+    ul {
+      list-style: none;
+      padding: 1rem 0;
+      li {
+        font-size: 1.6rem;
+        color: #666;
+        margin-bottom: 1rem;
+        i {
+          margin-right: 1rem;
+          color: $primaryRed;
+        }
+      }
+    }
+    .video {
+      width: 100%;
+    }
+  }
+}
+.menuWrapper {
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  .switcher {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.switchElement {
+  background-color: transparent;
+  width: 45rem;
+  min-height: 5rem;
+  max-width: 90vw;
+  .switchContent {
+    // padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    .switchItem {
+      background-color: #fff;
+      font-size: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+      box-shadow: 0 0.4rem 1rem rgba($color: #000000, $alpha: 0.1);
+      cursor: pointer;
+      span {
+        // margin-bottom: 1rem;
+        color: $altBlue;
+        font-weight: 600;
+        i {
+          margin-right: 1rem;
+          color: $reducedBlackColor;
+        }
+      }
+      .line {
+        height: 0.3rem;
+        background-color: $primaryRed;
+        width: 0%;
+        margin: 0 auto;
+        transition: 0.3s;
+      }
+      &:hover {
+        .line {
+          width: 100%;
+        }
+        span {
+          i {
+            color: $primaryRed;
+          }
+        }
+      }
+    }
+    .activeItem {
+      .line {
+        width: 100%;
+      }
+      span {
+        i {
+          color: $primaryRed;
+        }
+      }
+    }
+  }
+}
+
+//small screen
+@media screen and (max-width: 420px) {
+  .menuWrapper {
+    padding-top: 22rem;
+  }
+  .switchElement {
+    .switchContent {
+      display: flex;
+      flex-direction: column;
+      .switchItem {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+//large screen
+@media screen and (min-width: 1000px) {
+  .menuWrapper {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    .switcher {
+      left: initial;
+      right: 0;
+      top: 3rem;
+      // bottom: 8rem;
+    }
+  }
+  .contentWrapper {
+    .item {
+      .video {
+        height: 46rem;
+      }
+    }
+  }
+}

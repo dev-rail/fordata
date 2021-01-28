@@ -1,0 +1,387 @@
+$altBlue: #1d165c;
+$mobileBodyFontSize: 1.6rem;
+$reducedBlackColor: #666;
+$primaryRed: #e76346;
+$primaryBlue: #6129ac;
+.sectionOne {
+  background-color: #fff;
+  min-height: 100vh;
+  //   width: 100%;
+  position: relative;
+  .navWrapper {
+    position: relative;
+    z-index: 100;
+  }
+  .main {
+    position: relative;
+    z-index: 10;
+    .contents {
+      padding: 5rem 0;
+      .col1 {
+        .item1 {
+          // padding-top: 5rem;
+          padding-bottom: 10rem;
+          position: relative;
+          .item1Wrapper {
+            h1 {
+              font-size: 4rem;
+              color: $altBlue;
+              font-weight: 700;
+              line-height: 5rem;
+            }
+            p {
+              font-size: 1.8rem;
+              color: #666;
+              margin: 3rem 0;
+            }
+            .ctaDiv {
+              font-size: 1.8rem;
+              .learnMoreWrapper,
+              .getStartedWrapper {
+                background-color: transparent;
+                margin-right: 2rem;
+                margin-bottom: 1.5rem;
+                position: relative;
+                width: 15rem;
+                height: 5rem;
+                box-shadow: 0 0.4rem 1rem rgba($color: #000000, $alpha: 0.3) !important;
+                button {
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  z-index: 1;
+                  padding: 0 !important;
+                  border: none;
+                  a {
+                    font-size: 1.8rem;
+                    text-decoration: none;
+                    color: $altBlue;
+                    display: flex;
+                    justify-content: center;
+                    // padding: 0.5rem 0;
+                  }
+                  &::before {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-color: #f6f6f6;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                  }
+                  &::after {
+                    content: "";
+                    width: 100%;
+                    height: 0%;
+                    position: absolute;
+                    background-color: $primaryRed;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    transition: 0.3s;
+                  }
+                  &:hover {
+                    a {
+                      color: white;
+                    }
+                    &::after {
+                      height: 100%;
+                    }
+                  }
+                } //button
+              } //learnmore
+              .getStartedWrapper {
+                background-color: transparent;
+                // box-shadow: 0 0.4rem 1rem rgba($color: #000000, $alpha: 0.3);
+                button {
+                  a {
+                    color: #fff;
+                  }
+                  &::before {
+                    background-color: $primaryRed;
+                  }
+                  &::after {
+                    background-color: $altBlue;
+                  }
+                }
+              } //get started
+            }
+          } //item1Wrapper
+          .wheel_2 {
+            position: absolute;
+            top: -5rem;
+            animation: spinWheel infinite 20s linear;
+            display: none;
+          }
+          .wheel_3 {
+            position: absolute;
+            top: 25rem;
+            animation: spinWheel infinite 20s linear;
+            display: none;
+          }
+          .wheel_4 {
+            position: absolute;
+            bottom: 0;
+            right: 5rem;
+            animation: spinWheel infinite 20s linear;
+            display: none;
+          }
+          .wheel_5 {
+            position: absolute;
+            bottom: 14rem;
+            right: 5rem;
+            animation: spinWheel infinite 20s linear;
+            display: none;
+          }
+        } //item1
+      } //col1
+      .col2 {
+        display: none;
+      }
+    } //contents
+  } //main
+  .doughnutOne {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    width: 70%;
+    img {
+      width: 100%;
+    }
+  }
+  .doughnutTwo {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    min-height: 90vh;
+    // display: flex;
+    img {
+      width: 100%;
+      // position: absolute;
+      // top: 0;
+      // background-color: #1d165c;
+      // background-blend-mode: color-burn;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .sectionOne {
+    .doughnutOne,
+    .doughnutTwo {
+      display: block;
+    }
+    .wheel_2,
+    .wheel_3,
+    .wheel_4,
+    .wheel_5 {
+      display: block !important;
+    }
+  }
+}
+@media screen and (min-width: 770px) {
+  .sectionOne {
+    overflow: hidden;
+    .main {
+      .contents {
+        padding: 10rem 0;
+        .col2 {
+          display: block;
+          height: 70rem;
+          //   overflow: hidden;
+          .item2 {
+            position: relative;
+            // background-color: goldenrod;
+            height: 100%;
+            .item2Wrapper {
+              position: relative;
+              height: 100%;
+              .banner_1_1 {
+                // width: 100%;
+                width: 30rem;
+                height: 60rem;
+                position: absolute;
+                right: 0;
+                top: 3rem;
+                transform: translateX(10rem);
+              }
+              .banner_1_2 {
+                // width: 100%;
+                width: 10rem;
+                position: absolute;
+                right: 3rem;
+                // bottom: 7rem;
+                animation: upDownWomanRemote 2s infinite linear;
+              }
+              .banner_1_3 {
+                // width: 100%;
+                width: 12rem;
+                position: absolute;
+                bottom: 1rem;
+                right: 25rem;
+              }
+              .banner_1_4 {
+                // width: 100%;
+                width: 12rem;
+                position: absolute;
+                bottom: 1rem;
+                left: 2rem;
+                animation: upDownWomanLight 2s infinite linear;
+
+                // right: 30rem;
+              }
+              .banner_1_5 {
+                // width: 100%;
+                width: 15rem;
+                position: absolute;
+                // top: 4rem;
+                right: 27rem;
+                z-index: 1;
+                animation: upDownManChart 2s infinite linear;
+              }
+              .banner_1_6 {
+                // width: 100%;
+                width: 20rem;
+                position: absolute;
+                top: 12rem;
+                right: 29rem;
+              }
+              .pie_chart_1 {
+                width: 10rem;
+                position: absolute;
+                bottom: 1rem;
+                right: 13rem;
+                animation: upDownPieChart 2s infinite linear;
+              }
+              .coinWrapper {
+                position: absolute;
+                width: 20rem;
+                .arrow_4 {
+                  width: 100%;
+                  position: relative;
+                  z-index: 3;
+                }
+                .dollar_1,
+                .dollar_2,
+                .dollar_3,
+                .dollar_4,
+                .dollar_5 {
+                  position: absolute;
+                }
+                //second coin from left
+                .dollar_1 {
+                  bottom: 3rem;
+                  left: 2rem;
+                }
+                // 3rd coin from left
+                .dollar_2 {
+                  bottom: 6rem;
+                  left: 6rem;
+                }
+                //1coin
+                .dollar_5 {
+                  bottom: 0;
+                  left: 0;
+                }
+                .dollar_4 {
+                  top: 0;
+                }
+                .dollar_3 {
+                  top: 4rem;
+                  right: 4rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-height: 1200px) {
+  .sectionOne {
+    min-height: 80vh;
+  }
+}
+//woman remote
+@keyframes upDownWomanRemote {
+  0% {
+    bottom: 7rem;
+  }
+  50% {
+    bottom: 8rem;
+  }
+  100% {
+    bottom: 7rem;
+  }
+}
+//woman light remote
+@keyframes upDownWomanLight {
+  0% {
+    bottom: 1rem;
+  }
+  50% {
+    bottom: 2rem;
+  }
+  100% {
+    bottom: 1rem;
+  }
+}
+//man chart
+@keyframes upDownManChart {
+  0% {
+    top: 21rem;
+  }
+  50% {
+    top: 20rem;
+  }
+  100% {
+    top: 21rem;
+  }
+}
+//pie chart
+@keyframes upDownPieChart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+//wheels
+@keyframes spinWheel {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (min-width: 600px) {
+  .sectionOne {
+    .main {
+      .contents {
+        .col1 {
+          .item1 {
+            .item1Wrapper {
+              h1 {
+                font-size: 6rem;
+                line-height: 7rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

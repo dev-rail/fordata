@@ -1,0 +1,128 @@
+$altBlue: #1d165c;
+$mobileBodyFontSize: 1.6rem;
+$reducedBlackColor: #666;
+$primaryRed: #e76346;
+$primaryBlue: #6129ac;
+
+.footer {
+  background-image: url("../../../asset/img/shape-59.png");
+  background-position: center;
+  background-size: cover;
+  padding: 10rem 0 0 0;
+  .item {
+    color: white;
+    margin-bottom: 8rem;
+    h3 {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+    }
+    h3 + img {
+      margin-bottom: 2rem;
+      height: initial;
+    }
+    p {
+      color: #aaadb7;
+      font-size: 1.6rem;
+    }
+    img {
+      max-width: 15rem;
+      height: 5rem;
+      // background-color: red;
+    }
+    ul {
+      list-style: none;
+      li {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+        a {
+          color: #aaadb7;
+          text-decoration: none;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .formWrapper {
+      //   background-color: red;
+      .emailDiv,
+      .submit {
+        height: 4rem;
+      }
+      .emailDiv {
+        display: flex;
+        // background-color: yellow;
+        border: thin solid rgba($color: $primaryRed, $alpha: 0.5);
+        margin-bottom: 2rem;
+        i {
+          width: 4rem;
+          font-size: 1.6rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-right: thin solid rgba($color: $primaryRed, $alpha: 0.5);
+        }
+        input {
+          flex: 1;
+          font-size: 1.6rem;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          color: #fff;
+          padding: 0 1rem;
+        }
+      }
+      .submit {
+        height: 4rem;
+        display: flex;
+        input {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  } //item
+  .contact {
+    ul li {
+      display: flex;
+      flex-direction: column;
+      span {
+        i {
+          margin-right: 2rem;
+        }
+      }
+    }
+    .socials {
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          margin-right: 1rem;
+          a {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background-color: rgba($color: $primaryRed, $alpha: 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+              background-color: rgba($color: $primaryRed, $alpha: 0.6);
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyrightWrapper {
+    background-color: rgba($color: #000, $alpha: 0.5);
+    padding: 4rem 0;
+    color: white;
+    font-size: 1.6rem;
+  }
+}

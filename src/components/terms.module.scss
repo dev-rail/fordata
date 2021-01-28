@@ -1,0 +1,35 @@
+$altBlue: #1d165c;
+$mobileBodyFontSize: 1.6rem;
+$reducedBlackColor: #666;
+$primaryRed: #fb4a5b;
+$primaryBlue: #6129ac;
+.headerPolicy {
+  //   background-image: url("../asset/img/policyBg.jpg");
+  height: 30rem;
+  h2 {
+    margin-top: 2rem;
+    color: $altBlue;
+  }
+}
+.container {
+  font-size: 1.4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .headerPolicy {
+    background-image: url("../asset/img/policyBg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    background-color: $altBlue;
+    h2 {
+      color: white;
+    }
+  }
+  .container {
+    font-size: 1.6rem;
+  }
+}

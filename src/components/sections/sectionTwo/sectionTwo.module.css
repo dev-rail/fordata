@@ -1,0 +1,209 @@
+.section .introSection p {
+  font-size: 1.3rem;
+  font-weight: 200;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.section .introSection h2 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 4rem;
+  color: #1d165c;
+  text-align: center;
+  width: 60rem;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.section .introSection .desc {
+  text-transform: none;
+  font-size: 1.6rem;
+  width: 60rem;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.section .introSection img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.section .cardSection {
+  padding: 4rem;
+}
+
+.section .cardSection .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  padding: 3rem 2rem;
+  position: relative;
+  z-index: 4;
+  border-radius: 0.6rem;
+}
+
+.section .cardSection .item a {
+  font-size: 2rem;
+  color: #1d165c;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 4;
+  text-align: center;
+}
+
+.section .cardSection .item .subServices p {
+  position: relative;
+  z-index: 4;
+  font-size: 1.6rem;
+  line-height: 2.56rem;
+  color: #666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.section .cardSection .item .subServices p i {
+  color: #e76346;
+}
+
+.section .cardSection .item .iconWrapper {
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.section .cardSection .item .iconWrapper .imgWrapper {
+  background-color: #fff;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 2;
+  -webkit-box-shadow: 0 0.4rem 1rem rgba(29, 22, 92, 0.1), 0 -0.4rem 3rem rgba(29, 22, 92, 0.2);
+          box-shadow: 0 0.4rem 1rem rgba(29, 22, 92, 0.1), 0 -0.4rem 3rem rgba(29, 22, 92, 0.2);
+}
+
+.section .cardSection .item .iconWrapper .imgWrapper img {
+  width: 5rem !important;
+}
+
+.section .cardSection .item .iconWrapper .rotateWrapper {
+  width: 12rem;
+  height: 12rem;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  border: 0.2rem solid #fff;
+  border-radius: 50%;
+  -webkit-animation: spinWheel infinite 10s linear;
+          animation: spinWheel infinite 10s linear;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section .cardSection .item .iconWrapper .rotateWrapper i {
+  position: absolute;
+  left: 2.8rem;
+  color: white;
+}
+
+.section .cardSection .item::after {
+  content: "";
+  width: 100%;
+  height: 0%;
+  display: block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fa445f), to(#e76346));
+  background: linear-gradient(to bottom, #fa445f, #e76346);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 0.6rem;
+}
+
+.section .cardSection .item:hover::after {
+  height: 100%;
+}
+
+.section .cardSection .item:hover .iconWrapper .rotateWrapper {
+  visibility: visible;
+}
+
+.section .cardSection .item:hover p,
+.section .cardSection .item:hover a {
+  color: white;
+}
+
+.section .cardSection .item:hover p i {
+  color: white;
+}
+
+@-webkit-keyframes spinWheel {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinWheel {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .section .cardSection a {
+    min-height: 6rem;
+  }
+}
+/*# sourceMappingURL=sectionTwo.module.css.map */

@@ -1,0 +1,164 @@
+.contentWrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.contentWrapper .item .desc {
+  padding-bottom: 4rem;
+  min-height: 20rem;
+}
+
+.contentWrapper .item .desc p {
+  font-size: 1.6rem;
+  color: #666;
+  font-weight: 300;
+}
+
+.contentWrapper .item .desc h2 {
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  color: #1d165c;
+  font-weight: 900;
+}
+
+.contentWrapper .item p {
+  font-size: 1.6rem;
+  color: #666;
+}
+
+.contentWrapper .item ul {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.contentWrapper .item ul li {
+  font-size: 1.6rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.contentWrapper .item ul li i {
+  margin-right: 1rem;
+  color: #e76346;
+}
+
+.contentWrapper .item .video {
+  width: 100%;
+}
+
+.menuWrapper {
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.menuWrapper .switcher {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.switchElement {
+  background-color: transparent;
+  width: 45rem;
+  min-height: 5rem;
+  max-width: 90vw;
+}
+
+.switchElement .switchContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.switchElement .switchContent .switchItem {
+  background-color: #fff;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.switchElement .switchContent .switchItem span {
+  color: #1d165c;
+  font-weight: 600;
+}
+
+.switchElement .switchContent .switchItem span i {
+  margin-right: 1rem;
+  color: #666;
+}
+
+.switchElement .switchContent .switchItem .line {
+  height: 0.3rem;
+  background-color: #e76346;
+  width: 0%;
+  margin: 0 auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.switchElement .switchContent .switchItem:hover .line {
+  width: 100%;
+}
+
+.switchElement .switchContent .switchItem:hover span i {
+  color: #e76346;
+}
+
+.switchElement .switchContent .activeItem .line {
+  width: 100%;
+}
+
+.switchElement .switchContent .activeItem span i {
+  color: #e76346;
+}
+
+@media screen and (max-width: 420px) {
+  .menuWrapper {
+    padding-top: 22rem;
+  }
+  .switchElement .switchContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .switchElement .switchContent .switchItem {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menuWrapper {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+  .menuWrapper .switcher {
+    left: initial;
+    right: 0;
+    top: 3rem;
+  }
+  .contentWrapper .item .video {
+    height: 46rem;
+  }
+}
+/*# sourceMappingURL=sectionThree.module.css.map */

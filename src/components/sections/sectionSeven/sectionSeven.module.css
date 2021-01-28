@@ -1,0 +1,288 @@
+.section {
+  background-image: url("../../../asset/img/shape-5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 5rem 0 10rem 0;
+}
+
+.section .intro p {
+  font-size: 1.3rem;
+  font-weight: 200;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.section .intro .desc {
+  text-transform: none;
+  font-size: 1.6rem;
+}
+
+.section .intro h2 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 4rem;
+  color: #1d165c;
+}
+
+.section .intro img {
+  margin-bottom: 2rem;
+}
+
+.section .intro .wheels {
+  display: none;
+}
+
+.section .intro .wheels img:nth-child(1) {
+  -webkit-animation: spinWheel infinite 20s linear;
+          animation: spinWheel infinite 20s linear;
+  display: none;
+}
+
+.section .intro .wheels img:nth-child(2) {
+  -webkit-animation: spinWheelCounter infinite 20s linear;
+          animation: spinWheelCounter infinite 20s linear;
+}
+
+.section .item {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 4rem;
+}
+
+.section .item .front {
+  width: 100%;
+}
+
+.section .item .front .up {
+  padding: 4rem 2rem;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-top-right-radius: 25%;
+  -webkit-transform: translateY(4rem);
+          transform: translateY(4rem);
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.section .item .front .up p {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border-bottom: 0.1rem solid #e76346;
+  padding-bottom: 2rem;
+  color: #1d165c;
+}
+
+.section .item .front .up p i {
+  margin-right: 2rem;
+}
+
+.section .item .front .up .priceTag {
+  font-size: 4.6rem;
+  font-weight: 900;
+  padding-bottom: 2rem;
+  color: #1d165c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .item .front .up .priceTag p {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.section .item .front .down {
+  background-color: #e76346;
+  border-top-left-radius: 25%;
+  position: relative;
+  z-index: 2;
+}
+
+.section .item .front .down .content {
+  padding: 4rem 2rem;
+}
+
+.section .item .front .down .content ul {
+  list-style: none;
+}
+
+.section .item .front .down .content ul li {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.section .item .front .down .content ul li i {
+  margin-right: 1rem;
+}
+
+.section .item .front .down .content .cta {
+  height: 4rem;
+  background-color: #1d165c;
+  -webkit-box-shadow: 0 0.4rem 1rem rgba(29, 22, 92, 0.2);
+          box-shadow: 0 0.4rem 1rem rgba(29, 22, 92, 0.2);
+  margin: 0 auto;
+  margin-top: 2rem;
+  position: absolute;
+  width: 90%;
+}
+
+.section .item .front .down .content .cta a {
+  background-color: #1d165c;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.section .item .front .down::after {
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  display: block;
+  background-color: transparent;
+  border-top-left-radius: 25%;
+  bottom: 0;
+  z-index: -1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section .item:hover {
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+}
+
+.section .item:hover .front .up {
+  -webkit-animation: upDown 0.5s forwards linear;
+          animation: upDown 0.5s forwards linear;
+}
+
+.section .item:hover .front .up p {
+  color: #fff;
+  border-bottom: 0.1rem solid #fff;
+}
+
+.section .item:hover .front .up .priceTag {
+  color: #fff;
+}
+
+.section .item:hover .down {
+  -webkit-box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.section .item:hover .down::after {
+  height: 100%;
+  background-color: #fff;
+}
+
+.section .item:hover .down .content ul li {
+  color: #666;
+}
+
+@-webkit-keyframes upDown {
+  from {
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+    background-color: #1d165c;
+  }
+  to {
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+    background-color: #e76346;
+  }
+}
+
+@keyframes upDown {
+  from {
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+    background-color: #1d165c;
+  }
+  to {
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+    background-color: #e76346;
+  }
+}
+
+@-webkit-keyframes spinWheel {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinWheel {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinWheelCounter {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes spinWheelCounter {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .section .intro .wheels {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .section .intro .wheels img:nth-child(1) {
+    display: inline;
+  }
+}
+/*# sourceMappingURL=sectionSeven.module.css.map */

@@ -6,14 +6,19 @@
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "gsap": "^3.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-in-viewport": "^1.0.0-alpha.16",
+    "react-player": "^2.8.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "cleanBuild": "rimraf ./build/*",
+    "build": "npm run cleanBuild && set \"GENERATE_SOURCEMAP=false\" && react-scripts build ",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

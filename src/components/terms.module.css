@@ -1,0 +1,32 @@
+.headerPolicy {
+  height: 30rem;
+}
+
+.headerPolicy h2 {
+  margin-top: 2rem;
+  color: #1d165c;
+}
+
+.container {
+  font-size: 1.4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .headerPolicy {
+    background-image: url("../asset/img/policyBg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    background-color: #1d165c;
+  }
+  .headerPolicy h2 {
+    color: white;
+  }
+  .container {
+    font-size: 1.6rem;
+  }
+}
+/*# sourceMappingURL=terms.module.css.map */

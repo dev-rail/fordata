@@ -1,0 +1,248 @@
+.fixedNavigation {
+  position: fixed;
+  z-index: 10000;
+  padding: 2rem 0;
+  top: -20rem;
+  background-color: #fff;
+  width: 100%;
+  -webkit-box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.slideIn {
+  top: 0;
+}
+
+.slideOut {
+  top: -10rem;
+}
+
+.bottomNav {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  width: 100%;
+  background-color: transparent;
+  -webkit-transition: 0s;
+  transition: 0s;
+  padding: 0rem 0;
+  padding-bottom: 0 !important;
+  overflow: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  position: relative;
+}
+
+.bottomNav .brand img {
+  width: 15rem;
+  height: 5rem;
+}
+
+.bottomNav .brand i {
+  display: none;
+}
+
+.bottomNav .bottomUl {
+  list-style: none;
+  color: #1d165c;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0 !important;
+  padding: 1rem 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.bottomNav .bottomUl .itemLi {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+
+.bottomNav .bottomUl .itemLi a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0 !important;
+  border: none !important;
+  padding-left: 2rem;
+  text-decoration: none;
+  color: #1d165c;
+}
+
+.bottomNav .bottomUl .itemLi a:hover {
+  color: #e76346;
+}
+
+.bottomNav .bottomUl .itemLi span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+.bottomNav .bottomUl .itemLi span i {
+  font-size: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: none;
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.bottomNav .bottomUl .itemLi span .iRotate {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background: white;
+  color: #1d165c;
+}
+
+.bottomNav .bottomUl .itemLi span:hover {
+  color: #e76346;
+}
+
+.bottomNav .bottomUl .itemLi .DropDownUl {
+  list-style: none;
+  margin-left: 1.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: visible;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  top: 9rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
+  width: 25rem;
+  visibility: hidden;
+  opacity: 0;
+  color: #000;
+  border-top: 0.3rem solid #e76346 !important;
+}
+
+.bottomNav .bottomUl .itemLi .DropDownUl li a {
+  color: #1d165c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottomNav .bottomUl .itemLi .DropDownUl li a i {
+  color: #e76346;
+  margin-right: 1rem;
+}
+
+.bottomNav .bottomUl .itemLi .DropDownUl a {
+  color: #1d165c;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden !important;
+  position: relative;
+  text-decoration: none;
+}
+
+.bottomNav .bottomUl .itemLi .DropDownUl a i {
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.bottomNav .bottomUl .itemLi .DropDownUl a:hover {
+  background-color: #e76346;
+  color: #fff;
+}
+
+.bottomNav .bottomUl .itemLi .DropDownUl a:hover i {
+  left: 0.5rem;
+  color: #fff !important;
+}
+
+.bottomNav .bottomUl .itemLi:hover .DropDownUl {
+  top: 6rem;
+  visibility: visible;
+  opacity: 1;
+  padding: 2rem 1rem;
+}
+
+.bottomNav .bottomUl .itemLi:hover span i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.bottomNav .getInTouch {
+  background: -webkit-gradient(linear, right top, left top, from(#e76346), to(rgba(231, 99, 70, 0.8)));
+  background: linear-gradient(to left, #e76346, rgba(231, 99, 70, 0.8));
+  width: 13rem;
+  height: 4rem;
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .fixedNavigation {
+    display: none;
+  }
+}
+/*# sourceMappingURL=fixedNav.module.css.map */

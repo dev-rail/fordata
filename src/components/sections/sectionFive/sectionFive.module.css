@@ -1,0 +1,302 @@
+.section {
+  background-image: url("../../../asset/img/shape-57.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  margin-top: 5rem;
+  padding: 10rem 0 10rem 0;
+}
+
+.section .container .contents .intro {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.section .container .contents .intro p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.section .container .contents .intro h2 {
+  font-size: 3.2rem !important;
+  font-weight: 900;
+  line-height: 4rem;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.section .container .contents .intro img {
+  margin-top: 2rem;
+}
+
+.section .container .contents .intro .industriesCta {
+  margin: 2rem 0;
+  height: 4rem;
+  background-color: rgba(29, 22, 92, 0.9);
+  width: 20rem;
+  border-radius: 0.6rem;
+}
+
+.section .container .contents .intro .industriesCta a {
+  color: white;
+  font-size: 1.4rem;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  border-radius: 0.6rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section .container .contents .intro .industriesCta a:hover {
+  background-color: #e76346;
+  -webkit-box-shadow: 0 0.4rem 3rem rgba(231, 99, 70, 0.8);
+          box-shadow: 0 0.4rem 3rem rgba(231, 99, 70, 0.8);
+}
+
+.section .container .contents .row {
+  margin-top: 5rem;
+}
+
+.section .container .contents .row .item {
+  border: 0.1rem solid rgba(29, 22, 92, 0.8);
+  border-radius: 0.8rem;
+  position: relative;
+  z-index: 3;
+  background: #171147;
+  margin-bottom: 2rem;
+}
+
+.section .container .contents .row .item .up {
+  position: relative;
+  z-index: 4;
+}
+
+.section .container .contents .row .item .up div {
+  padding: 2rem 2rem 0 2rem;
+  min-height: 12rem;
+}
+
+.section .container .contents .row .item .up div p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.section .container .contents .row .item .up div h4 {
+  font-size: 2rem;
+}
+
+.section .container .contents .row .item .overlayIconWrapper {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  z-index: inherit;
+}
+
+.section .container .contents .row .item .overlayIconWrapper .arrow {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(29, 22, 92, 0.9);
+  border-radius: 50%;
+  margin-bottom: 3rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section .container .contents .row .item .overlayIconWrapper .arrow a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.section .container .contents .row .item .overlayIconWrapper .arrow:hover {
+  background-color: rgba(29, 22, 92, 0.9) !important;
+}
+
+.section .container .contents .row .item .overlayIconWrapper .arrow:hover a {
+  color: #fff !important;
+}
+
+.section .container .contents .row .item .overlayIconWrapper svg {
+  width: 5rem;
+  height: 5rem;
+  margin-left: 0;
+}
+
+.section .container .contents .row .item .down {
+  background-color: transparent;
+  position: relative;
+  z-index: inherit;
+  height: 18rem;
+  overflow: hidden;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  border-radius: 0.8rem;
+}
+
+.section .container .contents .row .item .down .svg {
+  position: absolute;
+  bottom: -5rem;
+  left: 0rem;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  width: 40rem;
+  height: 50rem;
+}
+
+.section .container .contents .row .item .down .svg path {
+  fill: rgba(29, 22, 92, 0.9);
+}
+
+.section .container .contents .row .item .slide1 {
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  background: #100c33;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 0.8rem;
+}
+
+.section .container .contents .row .item .slide2 {
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  background-color: #e76346;
+  left: 0;
+  bottom: 0;
+  border-radius: 0.8rem;
+  -webkit-box-shadow: 0 0.4rem 3rem rgba(231, 99, 70, 0.8);
+          box-shadow: 0 0.4rem 3rem rgba(231, 99, 70, 0.8);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section .container .contents .row .item:hover .slide1 {
+  height: 100%;
+}
+
+.section .container .contents .row .item:hover .slide2 {
+  height: 100%;
+}
+
+.section .container .contents .row .item:hover .down .svg path {
+  fill: #fff;
+}
+
+.section .container .contents .row .item:hover .overlayIconWrapper svg path {
+  fill: #fff;
+}
+
+.section .container .contents .row .item:hover .overlayIconWrapper .arrow {
+  background-color: #fff;
+}
+
+.section .container .contents .row .item:hover .overlayIconWrapper .arrow a {
+  color: #e76346;
+}
+
+.section .turn {
+  background-image: url("../../../asset/img/shape-58.png");
+  background-position: center;
+  background-size: cover;
+  height: 40rem;
+  width: 100%;
+  -webkit-animation: move 20s infinite linear;
+          animation: move 20s infinite linear;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.section .turnCounter {
+  background-image: url("../../../asset/img/shape-58.png");
+  background-position: center;
+  background-size: cover;
+  height: 40rem;
+  width: 0%;
+  -webkit-animation: moveCounter 20s infinite linear;
+          animation: moveCounter 20s infinite linear;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@-webkit-keyframes move {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes move {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes moveCounter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes moveCounter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=sectionFive.module.css.map */

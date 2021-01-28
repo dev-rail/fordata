@@ -1,0 +1,133 @@
+$altBlue: #1d165c;
+$mobileBodyFontSize: 1.6rem;
+$reducedBlackColor: #666;
+$primaryRed: #e76346;
+$primaryBlue: #6129ac;
+.section {
+  padding: 10rem 0;
+  .contents {
+    .item1 {
+      img {
+        width: 100%;
+      }
+      margin-bottom: 2rem;
+      //   transform: skew(10deg);
+    } //item 1
+    .item2 {
+      position: relative;
+      .intro {
+        p {
+          font-size: 1.3rem;
+          font-weight: 200;
+          line-height: 2.4rem;
+          text-transform: uppercase;
+          color: $reducedBlackColor;
+          //   margin-bottom: 2rem;
+        }
+        .desc {
+          text-transform: none;
+          font-size: 1.6rem;
+        }
+        h2 {
+          font-size: 3.2rem;
+          font-weight: 900;
+          line-height: 4rem;
+          color: $altBlue;
+        }
+        img {
+          margin: 0 auto;
+          margin-bottom: 2rem;
+        }
+      } //intro
+      .counters {
+        margin-top: 4rem;
+        .countElement {
+          display: flex;
+          margin-bottom: 4rem;
+          //   background-color: green;
+          height: 5rem;
+          .left {
+            width: 5rem;
+            background-color: #fff;
+            font-size: 1.6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 2rem;
+            box-shadow: 0 0.4rem 3rem rgba($color: #000000, $alpha: 0.1);
+            border-radius: 0.6rem;
+            color: $altBlue;
+            font-weight: 600;
+          }
+          .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            h5 {
+              font-size: 1.8rem;
+              //   background-color: blue;
+              color: $altBlue;
+              font-weight: 600;
+            }
+            .rightDown {
+              display: flex;
+              align-items: center;
+              .slides {
+                position: relative;
+                // background-color: yellow;
+                display: flex;
+                align-items: center;
+                flex: 1;
+                overflow: hidden;
+                .fullLength {
+                  width: 100%;
+                  height: 0.1rem;
+                  background-color: $reducedBlackColor;
+                  position: absolute;
+                }
+                .sliderLength86 {
+                  position: relative;
+                  z-index: 2;
+                  width: 86%;
+                  height: 0.2rem;
+                  background-color: $primaryRed;
+                }
+                .sliderLength80 {
+                  position: relative;
+                  z-index: 2;
+                  width: 80%;
+                  height: 0.2rem;
+                  background-color: $primaryRed;
+                }
+                .sliderLength96 {
+                  position: relative;
+                  z-index: 2;
+                  width: 96%;
+                  height: 0.2rem;
+                  background-color: $primaryRed;
+                }
+                i {
+                  position: relative;
+                  z-index: 2;
+                  color: $primaryRed;
+                  font-size: 1.4rem;
+                }
+              }
+              .iconBig {
+                font-size: 2.4rem;
+                color: $primaryRed;
+                margin-right: 1rem;
+              }
+            }
+          }
+        } //element
+      }
+      .elipse {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+      }
+    } //item2
+  } //contents
+}

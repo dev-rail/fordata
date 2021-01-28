@@ -1,0 +1,230 @@
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10rem;
+}
+
+.intro p {
+  font-size: 1.3rem;
+  font-weight: 200;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.intro h2 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 4rem;
+  color: #1d165c;
+  text-align: center;
+  width: 60rem;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.intro img {
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.intro .desc {
+  text-transform: none;
+  font-size: 1.6rem;
+  width: 60rem;
+  max-width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cardWrapper {
+  padding-bottom: 5rem;
+}
+
+.cardWrapper .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6rem;
+}
+
+.cardWrapper .item a {
+  font-size: 2rem;
+  color: #1d165c;
+  line-height: 3rem;
+  font-weight: 700;
+}
+
+.cardWrapper .item p {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #666;
+}
+
+.cardWrapper .item .imgWrapper {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.cardWrapper .item .imgWrapper .number {
+  position: absolute;
+  right: 0;
+  z-index: 3;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: thin solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+}
+
+.cardWrapper .item .imgWrapper .number span {
+  font-size: 1.3rem;
+}
+
+.cardWrapper .item .imgWrapper .number .color {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #e76346;
+  z-index: -1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cardWrapper .item .imgWrapper .iconDiv {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.cardWrapper .item .imgWrapper .iconDiv svg {
+  width: 60px;
+}
+
+.cardWrapper .item .imgWrapper .iconDiv svg g path {
+  fill: #e76346;
+}
+
+.cardWrapper .item .imgWrapper .svg {
+  -webkit-filter: drop-shadow(0 0.4rem 1rem rgba(29, 22, 92, 0.1));
+          filter: drop-shadow(0 0.4rem 1rem rgba(29, 22, 92, 0.1));
+  background-image: url("../../../asset/img/icon-bg-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.cardWrapper .item .imgWrapper .svgColor {
+  -webkit-filter: drop-shadow(0 0.4rem 1rem rgba(231, 99, 70, 0.4));
+          filter: drop-shadow(0 0.4rem 1rem rgba(231, 99, 70, 0.4));
+  background-image: url("../../../asset/img/icon-bg-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cardWrapper .item:hover .imgWrapper .svgColor {
+  height: 100%;
+}
+
+.cardWrapper .item:hover .imgWrapper .svg {
+  -webkit-filter: drop-shadow(0 0.4rem 0rem rgba(29, 22, 92, 0));
+          filter: drop-shadow(0 0.4rem 0rem rgba(29, 22, 92, 0));
+}
+
+.cardWrapper .item:hover .imgWrapper .number .color {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cardWrapper .item:hover .imgWrapper .number span {
+  color: white;
+}
+
+.cardWrapper .item:hover .imgWrapper .iconDiv svg g path {
+  fill: #fff;
+}
+
+@media screen and (min-width: 1000px) {
+  .cardWrapper .item .line {
+    content: "";
+    width: 40%;
+    height: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 20rem;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    z-index: -1;
+  }
+  .cardWrapper .item .line i {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.1);
+  }
+  .cardWrapper .item:hover .line {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    visibility: visible;
+  }
+}
+/*# sourceMappingURL=sectionFour.module.css.map */

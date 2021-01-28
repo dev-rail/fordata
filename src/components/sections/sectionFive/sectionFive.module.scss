@@ -1,0 +1,250 @@
+$altBlue: #1d165c;
+$mobileBodyFontSize: 1.6rem;
+$reducedBlackColor: #666;
+$primaryRed: #e76346;
+$primaryBlue: #6129ac;
+
+.section {
+  // min-height: 90vh;
+  background-image: url("../../../asset/img/shape-57.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  margin-top: 5rem;
+  padding: 10rem 0 10rem 0;
+  .container {
+    .contents {
+      .intro {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        position: relative;
+        z-index: 2;
+        p {
+          font-size: 1.3rem;
+          font-weight: 600;
+          line-height: 2.4rem;
+          text-transform: uppercase;
+          // text-align: center;
+          margin-bottom: 2rem;
+        }
+        h2 {
+          font-size: 3.2rem !important;
+          font-weight: 900;
+          line-height: 4rem;
+          // text-align: center;
+          // width: 60rem;
+          max-width: 90vw;
+          margin: 0 auto;
+        }
+        img {
+          margin-top: 2rem;
+        }
+        .industriesCta {
+          margin: 2rem 0;
+          height: 4rem;
+          background-color: rgba($color: $altBlue, $alpha: 0.9);
+          width: 20rem;
+          border-radius: 0.6rem;
+          a {
+            color: white;
+            font-size: 1.4rem;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 0.6rem;
+            transition: 0.3s;
+            &:hover {
+              background-color: $primaryRed;
+              box-shadow: 0 0.4rem 3rem rgba($color: $primaryRed, $alpha: 0.8);
+            }
+          }
+        }
+      } //intro
+      .row {
+        margin-top: 5rem;
+        .item {
+          border: 0.1rem solid rgba($color: $altBlue, $alpha: 0.8);
+          //   padding: 2rem;
+          border-radius: 0.8rem;
+          position: relative;
+          z-index: 3;
+          background: darken($color: $altBlue, $amount: 5);
+          margin-bottom: 2rem;
+          .up {
+            position: relative;
+            z-index: 4;
+            div {
+              padding: 2rem 2rem 0 2rem;
+              min-height: 12rem;
+              p {
+                font-size: 1.3rem;
+                font-weight: 600;
+                line-height: 2.4rem;
+                text-transform: uppercase;
+                margin-bottom: 2rem;
+                color: rgba($color: #fff, $alpha: 1);
+              }
+              h4 {
+                font-size: 2rem;
+              }
+            }
+          } //up
+          .overlayIconWrapper {
+            position: absolute;
+            bottom: 0;
+            padding: 2rem;
+            z-index: inherit;
+            .arrow {
+              width: 5rem;
+              height: 5rem;
+              background-color: rgba($color: $altBlue, $alpha: 0.9);
+              border-radius: 50%;
+              margin-bottom: 3rem;
+              transition: 0.3s;
+              a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: #fff;
+              }
+              &:hover {
+                background-color: rgba(
+                  $color: $altBlue,
+                  $alpha: 0.9
+                ) !important;
+                a {
+                  color: #fff !important;
+                }
+              }
+            }
+            svg {
+              width: 5rem;
+              height: 5rem;
+              margin-left: 0;
+            }
+          }
+          .down {
+            background-color: transparent;
+            position: relative;
+            z-index: inherit;
+            height: 18rem;
+            overflow: hidden;
+            transform: rotateX(180deg);
+            border-radius: 0.8rem;
+            .svg {
+              position: absolute;
+              bottom: -5rem;
+              left: 0rem;
+              transform: rotateX(180deg);
+              width: 40rem;
+              height: 50rem;
+              path {
+                fill: rgba($color: $altBlue, $alpha: 0.9);
+              }
+            }
+          } //down
+          .slide1 {
+            position: absolute;
+            height: 0%;
+            width: 100%;
+            // background: darken$altBlue;
+            background: darken($color: $altBlue, $amount: 10);
+            left: 0;
+            top: 0;
+            transition: 0.3s;
+            border-radius: 0.8rem;
+          }
+          .slide2 {
+            position: absolute;
+            height: 0%;
+            width: 100%;
+            background-color: $primaryRed;
+            left: 0;
+            bottom: 0;
+            border-radius: 0.8rem;
+            box-shadow: 0 0.4rem 3rem rgba($color: $primaryRed, $alpha: 0.8);
+            transition: 0.3s;
+          }
+          &:hover {
+            .slide1 {
+              height: 100%;
+            }
+            .slide2 {
+              height: 100%;
+            }
+            .down {
+              .svg {
+                path {
+                  fill: #fff;
+                }
+              }
+            }
+            .overlayIconWrapper {
+              svg {
+                path {
+                  fill: #fff;
+                }
+              }
+              .arrow {
+                background-color: #fff;
+                a {
+                  color: $primaryRed;
+                }
+              }
+            }
+          }
+        }
+      }
+    } //contents
+  }
+  .turn {
+    background-image: url("../../../asset/img/shape-58.png");
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+    animation: move 20s infinite linear;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    // z-index: 1;
+  }
+  .turnCounter {
+    background-image: url("../../../asset/img/shape-58.png");
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    width: 0%;
+    animation: moveCounter 20s infinite linear;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes moveCounter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

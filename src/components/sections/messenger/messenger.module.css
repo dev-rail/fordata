@@ -1,0 +1,47 @@
+.controllerWrapper {
+  width: 4rem;
+  height: 4rem;
+  background-color: #1d165c;
+  color: #e76346;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.section {
+  position: fixed;
+  right: 2rem;
+  bottom: 10rem;
+  z-index: 100000;
+}
+
+.section .msgBoxWrapper {
+  width: 300px;
+  height: 200px;
+  background-color: yellow;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 2rem;
+}
+
+.section .open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.content .top {
+  background-image: url("../../../asset/img/pattern_messenger.png");
+}
+/*# sourceMappingURL=messenger.module.css.map */

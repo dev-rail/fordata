@@ -1,0 +1,188 @@
+$mobileBodyFontSize: 1.6rem;
+$reducedBlackColor: rgba(
+  $color: #000000,
+  $alpha: 0.8,
+);
+$primaryRed: #e76346;
+$primaryBlue: #6129ac;
+$altBlue: #1d165c;
+.fixedNavigation {
+  position: fixed;
+  z-index: 10000;
+  padding: 2rem 0;
+  top: -20rem;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 0.4rem 2rem rgba($color: #000000, $alpha: 0.3);
+  transition: 0.5s;
+}
+.slideIn {
+  top: 0;
+}
+.slideOut {
+  top: -10rem;
+}
+.bottomNav {
+  min-height: fit-content;
+  width: 100%;
+  background-color: transparent;
+  transition: 0s;
+  padding: 0rem 0;
+  padding-bottom: 0 !important;
+  overflow: visible;
+  display: flex;
+  align-items: center !important;
+  position: relative;
+  .brand {
+    img {
+      width: 15rem;
+      height: 5rem;
+    }
+    i {
+      display: none;
+    }
+  } //brand
+  .bottomUl {
+    list-style: none;
+    color: #1d165c;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0 !important;
+    padding: 1rem 0;
+    flex: 1;
+    .itemLi {
+      width: fit-content;
+      position: relative;
+      a {
+        //   background-color: red;
+        display: flex;
+        height: 4rem;
+        align-items: center;
+        margin-bottom: 0 !important;
+        border: none !important;
+        padding-left: 2rem;
+        text-decoration: none;
+        color: $altBlue;
+        &:hover {
+          color: $primaryRed;
+        }
+      } //a
+      span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+        padding-left: 2rem;
+        cursor: pointer;
+        i {
+          font-size: 1rem;
+          transition: 0.3s;
+          background: none;
+          width: 3rem;
+          height: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          margin-right: 1rem;
+        }
+        .iRotate {
+          transform: rotate(90deg);
+          background: white;
+          color: #1d165c;
+        }
+        &:hover {
+          color: $primaryRed;
+        }
+      } //span for drop down
+      .DropDownUl {
+        list-style: none;
+        margin-left: 1.5rem;
+        height: fit-content;
+        overflow: visible;
+        transition: 0.3s;
+        position: absolute;
+        top: 9rem;
+        background-color: white;
+        box-shadow: 0 0.4rem 1rem rgba($color: #000000, $alpha: 0.3);
+        width: 25rem;
+        visibility: hidden;
+        opacity: 0;
+        color: #000;
+        border-top: 0.3rem solid $primaryRed !important;
+        li {
+          a {
+            color: $altBlue;
+            display: flex;
+            align-items: center;
+            i {
+              color: $primaryRed;
+              margin-right: 1rem;
+            }
+          }
+        }
+        a {
+          // border-bottom: 0.1rem solid #66647a !important;
+          color: $altBlue;
+          cursor: pointer;
+          transition: 0.3s;
+          overflow: hidden !important;
+          position: relative;
+          text-decoration: none;
+          i {
+            position: absolute;
+            left: 0;
+            transition: 0.3s linear;
+          }
+          &:hover {
+            background-color: $primaryRed;
+            color: #fff;
+            i {
+              left: 0.5rem;
+              color: #fff !important;
+            }
+          }
+        }
+      }
+      &:hover {
+        .DropDownUl {
+          top: 6rem;
+          visibility: visible;
+          opacity: 1;
+          padding: 2rem 1rem;
+        }
+        span {
+          i {
+            transform: rotate(90deg);
+          }
+        }
+      }
+    } //itemLi
+  }
+  .getInTouch {
+    background: linear-gradient(
+      to left,
+      $primaryRed,
+      rgba($color: $primaryRed, $alpha: 0.8)
+    );
+    width: 13rem;
+    height: 4rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+  }
+} //bottomNavOpen
+
+@media screen and (max-width: 1000px) {
+  .fixedNavigation {
+    display: none;
+  }
+}

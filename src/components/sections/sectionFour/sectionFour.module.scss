@@ -1,0 +1,191 @@
+$altBlue: #1d165c;
+$mobileBodyFontSize: 1.6rem;
+$reducedBlackColor: #666;
+$primaryRed: #e76346;
+$primaryBlue: #6129ac;
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+  p {
+    font-size: 1.3rem;
+    font-weight: 200;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    color: $reducedBlackColor;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 4rem;
+    color: $altBlue;
+    text-align: center;
+    width: 60rem;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  img {
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .desc {
+    text-transform: none;
+    font-size: 1.6rem;
+    width: 60rem;
+    max-width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+} //intro
+
+.cardWrapper {
+  padding-bottom: 5rem;
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+    a {
+      font-size: 2rem;
+      color: $altBlue;
+      line-height: 3rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.6rem;
+      text-align: center;
+      color: $reducedBlackColor;
+    }
+    .imgWrapper {
+      width: 20rem;
+      height: 20rem;
+      position: relative;
+      margin-bottom: 2rem;
+      //   background-color: green;
+      .number {
+        position: absolute;
+        right: 0;
+        z-index: 3;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: thin solid rgba($color: #000, $alpha: 0.1);
+        background-color: transparent;
+        span {
+          font-size: 1.3rem;
+        }
+        .color {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          background-color: $primaryRed;
+          z-index: -1;
+          transform: scale(0);
+          transition: 0.3s;
+        }
+      }
+      .iconDiv {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        svg {
+          width: 60px;
+          g path {
+            fill: $primaryRed;
+          }
+        }
+      }
+      .svg {
+        filter: drop-shadow(0 0.4rem 1rem rgba($color: $altBlue, $alpha: 0.1));
+        background-image: url("../../../asset/img/icon-bg-1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+      }
+      .svgColor {
+        filter: drop-shadow(
+          0 0.4rem 1rem rgba($color: $primaryRed, $alpha: 0.4)
+        );
+        background-image: url("../../../asset/img/icon-bg-2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 0%;
+        position: absolute;
+        bottom: 0;
+        transition: 0.3s;
+        // background-color: white;
+      }
+    } //imgWrapper
+    &:hover {
+      .imgWrapper {
+        .svgColor {
+          height: 100%;
+        }
+        .svg {
+          filter: drop-shadow(0 0.4rem 0rem rgba($color: $altBlue, $alpha: 0));
+        }
+        .number {
+          .color {
+            transform: scale(1);
+          }
+          span {
+            color: white;
+          }
+        }
+        .iconDiv {
+          svg g path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  } //item
+}
+
+@media screen and (min-width: 1000px) {
+  .cardWrapper {
+    // background-color: green;
+    .item {
+      .line {
+        content: "";
+        width: 40%;
+        height: 0.1rem;
+        background-color: rgba($color: #000, $alpha: 0.1);
+        position: absolute;
+        top: 20rem;
+        transform: translateX(0%);
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        transition: 0.4s;
+        z-index: -1;
+        i {
+          font-size: 1.3rem;
+          color: rgba($color: #000, $alpha: 0.1);
+        }
+      }
+      &:hover {
+        .line {
+          transform: translateX(100%);
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

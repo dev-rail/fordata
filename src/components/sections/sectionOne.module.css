@@ -1,0 +1,453 @@
+.sectionOne {
+  background-color: #fff;
+  min-height: 100vh;
+  position: relative;
+}
+
+.sectionOne .navWrapper {
+  position: relative;
+  z-index: 100;
+}
+
+.sectionOne .main {
+  position: relative;
+  z-index: 10;
+}
+
+.sectionOne .main .contents {
+  padding: 5rem 0;
+}
+
+.sectionOne .main .contents .col1 .item1 {
+  padding-bottom: 10rem;
+  position: relative;
+}
+
+.sectionOne .main .contents .col1 .item1 .item1Wrapper h1 {
+  font-size: 4rem;
+  color: #1d165c;
+  font-weight: 700;
+  line-height: 5rem;
+}
+
+.sectionOne .main .contents .col1 .item1 .item1Wrapper p {
+  font-size: 1.8rem;
+  color: #666;
+  margin: 3rem 0;
+}
+
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv {
+  font-size: 1.8rem;
+}
+
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .learnMoreWrapper,
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .getStartedWrapper {
+  background-color: transparent;
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 15rem;
+  height: 5rem;
+  -webkit-box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3) !important;
+          box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3) !important;
+}
+
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .learnMoreWrapper button,
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .getStartedWrapper button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  padding: 0 !important;
+  border: none;
+}
+
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .learnMoreWrapper button a,
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .getStartedWrapper button a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #1d165c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .learnMoreWrapper button::before,
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .getStartedWrapper button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #f6f6f6;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .learnMoreWrapper button::after,
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .getStartedWrapper button::after {
+  content: "";
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  background-color: #e76346;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .learnMoreWrapper button:hover a,
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .getStartedWrapper button:hover a {
+  color: white;
+}
+
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .learnMoreWrapper button:hover::after,
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .getStartedWrapper button:hover::after {
+  height: 100%;
+}
+
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .getStartedWrapper {
+  background-color: transparent;
+}
+
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .getStartedWrapper button a {
+  color: #fff;
+}
+
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .getStartedWrapper button::before {
+  background-color: #e76346;
+}
+
+.sectionOne .main .contents .col1 .item1 .item1Wrapper .ctaDiv .getStartedWrapper button::after {
+  background-color: #1d165c;
+}
+
+.sectionOne .main .contents .col1 .item1 .wheel_2 {
+  position: absolute;
+  top: -5rem;
+  -webkit-animation: spinWheel infinite 20s linear;
+          animation: spinWheel infinite 20s linear;
+  display: none;
+}
+
+.sectionOne .main .contents .col1 .item1 .wheel_3 {
+  position: absolute;
+  top: 25rem;
+  -webkit-animation: spinWheel infinite 20s linear;
+          animation: spinWheel infinite 20s linear;
+  display: none;
+}
+
+.sectionOne .main .contents .col1 .item1 .wheel_4 {
+  position: absolute;
+  bottom: 0;
+  right: 5rem;
+  -webkit-animation: spinWheel infinite 20s linear;
+          animation: spinWheel infinite 20s linear;
+  display: none;
+}
+
+.sectionOne .main .contents .col1 .item1 .wheel_5 {
+  position: absolute;
+  bottom: 14rem;
+  right: 5rem;
+  -webkit-animation: spinWheel infinite 20s linear;
+          animation: spinWheel infinite 20s linear;
+  display: none;
+}
+
+.sectionOne .main .contents .col2 {
+  display: none;
+}
+
+.sectionOne .doughnutOne {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 70%;
+}
+
+.sectionOne .doughnutOne img {
+  width: 100%;
+}
+
+.sectionOne .doughnutTwo {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  min-height: 90vh;
+}
+
+.sectionOne .doughnutTwo img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .sectionOne .doughnutOne,
+  .sectionOne .doughnutTwo {
+    display: block;
+  }
+  .sectionOne .wheel_2,
+  .sectionOne .wheel_3,
+  .sectionOne .wheel_4,
+  .sectionOne .wheel_5 {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .sectionOne {
+    overflow: hidden;
+  }
+  .sectionOne .main .contents {
+    padding: 10rem 0;
+  }
+  .sectionOne .main .contents .col2 {
+    display: block;
+    height: 70rem;
+  }
+  .sectionOne .main .contents .col2 .item2 {
+    position: relative;
+    height: 100%;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper {
+    position: relative;
+    height: 100%;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .banner_1_1 {
+    width: 30rem;
+    height: 60rem;
+    position: absolute;
+    right: 0;
+    top: 3rem;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .banner_1_2 {
+    width: 10rem;
+    position: absolute;
+    right: 3rem;
+    -webkit-animation: upDownWomanRemote 2s infinite linear;
+            animation: upDownWomanRemote 2s infinite linear;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .banner_1_3 {
+    width: 12rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 25rem;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .banner_1_4 {
+    width: 12rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    -webkit-animation: upDownWomanLight 2s infinite linear;
+            animation: upDownWomanLight 2s infinite linear;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .banner_1_5 {
+    width: 15rem;
+    position: absolute;
+    right: 27rem;
+    z-index: 1;
+    -webkit-animation: upDownManChart 2s infinite linear;
+            animation: upDownManChart 2s infinite linear;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .banner_1_6 {
+    width: 20rem;
+    position: absolute;
+    top: 12rem;
+    right: 29rem;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .pie_chart_1 {
+    width: 10rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 13rem;
+    -webkit-animation: upDownPieChart 2s infinite linear;
+            animation: upDownPieChart 2s infinite linear;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .coinWrapper {
+    position: absolute;
+    width: 20rem;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .coinWrapper .arrow_4 {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .coinWrapper .dollar_1,
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .coinWrapper .dollar_2,
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .coinWrapper .dollar_3,
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .coinWrapper .dollar_4,
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .coinWrapper .dollar_5 {
+    position: absolute;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .coinWrapper .dollar_1 {
+    bottom: 3rem;
+    left: 2rem;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .coinWrapper .dollar_2 {
+    bottom: 6rem;
+    left: 6rem;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .coinWrapper .dollar_5 {
+    bottom: 0;
+    left: 0;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .coinWrapper .dollar_4 {
+    top: 0;
+  }
+  .sectionOne .main .contents .col2 .item2 .item2Wrapper .coinWrapper .dollar_3 {
+    top: 4rem;
+    right: 4rem;
+  }
+}
+
+@media screen and (min-height: 1200px) {
+  .sectionOne {
+    min-height: 80vh;
+  }
+}
+
+@-webkit-keyframes upDownWomanRemote {
+  0% {
+    bottom: 7rem;
+  }
+  50% {
+    bottom: 8rem;
+  }
+  100% {
+    bottom: 7rem;
+  }
+}
+
+@keyframes upDownWomanRemote {
+  0% {
+    bottom: 7rem;
+  }
+  50% {
+    bottom: 8rem;
+  }
+  100% {
+    bottom: 7rem;
+  }
+}
+
+@-webkit-keyframes upDownWomanLight {
+  0% {
+    bottom: 1rem;
+  }
+  50% {
+    bottom: 2rem;
+  }
+  100% {
+    bottom: 1rem;
+  }
+}
+
+@keyframes upDownWomanLight {
+  0% {
+    bottom: 1rem;
+  }
+  50% {
+    bottom: 2rem;
+  }
+  100% {
+    bottom: 1rem;
+  }
+}
+
+@-webkit-keyframes upDownManChart {
+  0% {
+    top: 21rem;
+  }
+  50% {
+    top: 20rem;
+  }
+  100% {
+    top: 21rem;
+  }
+}
+
+@keyframes upDownManChart {
+  0% {
+    top: 21rem;
+  }
+  50% {
+    top: 20rem;
+  }
+  100% {
+    top: 21rem;
+  }
+}
+
+@-webkit-keyframes upDownPieChart {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes upDownPieChart {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes spinWheel {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinWheel {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .sectionOne .main .contents .col1 .item1 .item1Wrapper h1 {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+}
+/*# sourceMappingURL=sectionOne.module.css.map */

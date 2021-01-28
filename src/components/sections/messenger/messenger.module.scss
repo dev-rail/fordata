@@ -1,0 +1,46 @@
+$altBlue: #1d165c;
+$mobileBodyFontSize: 1.6rem;
+$reducedBlackColor: #666;
+$primaryRed: #e76346;
+$primaryBlue: #6129ac;
+
+.controllerWrapper {
+  width: 4rem;
+  height: 4rem;
+  background-color: $altBlue;
+  color: #e76346;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.section {
+  position: fixed;
+  right: 2rem;
+  bottom: 10rem;
+  z-index: 100000;
+  //   height: 60rem;
+  .msgBoxWrapper {
+    width: 300px;
+    height: 200px;
+    background-color: yellow;
+    transform: translateX(200%);
+    transition: 0.3s;
+    margin-bottom: 2rem;
+  }
+  //msgBox Open
+  .open {
+    transform: translateX(0);
+    // top: 0;
+  }
+}
+
+.content {
+  .top {
+    background-image: url("../../../asset/img/pattern_messenger.png");
+  }
+}
