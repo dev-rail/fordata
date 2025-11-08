@@ -31,7 +31,7 @@ const Footer = () => {
                   <span>
                     <i className={"bi bi-phone"}></i>Phone
                   </span>
-                  <a href="tel:+2347068619253">+2349021318226</a>
+                  <a href="tel:+2347068619253">+2349028501979</a>
                 </li>
                 <li>
                   <span>
