@@ -74,7 +74,7 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li className={styles.item}>
-                  <a href="tel:+2349021318226">+2349021318226</a>
+                  <a href="tel:+2349028501979">+2349028501979</a>
                 </li>
               </ul>
               <ul className={styles.ulSocials}>
