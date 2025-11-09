@@ -31,7 +31,7 @@ const Footer = () => {
                   <span>
                     <i className={"bi bi-phone"}></i>Phone
                   </span>
-                  <a href="tel:+2347068619253">+2349028501979</a>
+                  <a href="tel:+2349028501979">+2349028501979</a>
                 </li>
                 <li>
                   <span>
@@ -45,7 +45,7 @@ const Footer = () => {
                   <span>
                     <i className={"bi bi-building"}></i>Address
                   </span>
-                  <a href="#">Plot 22, Olive Church Street, Ago, Lagos</a>
+                  <a href="#">14 Isaac Olokun Aluko St, Lekki Penninsula II, Lagos, Nigeria.</a>
                 </li>
               </ul>
               <div className={styles.socials}>
